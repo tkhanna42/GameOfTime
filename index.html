@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game of Time</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body style="text-align:center; background-color: #000; color: #1986d6;">
+
+<!-- <h1>Game of Time</h1> -->
+<img src="https://github.com/tennispro1213/pomodoro/blob/master/images/logoOrb.png?raw=true" width="50%">
+<!-- <div>
+<canvas id="canvas" hidden="true"></canvas>
+</div> -->
+<!-- <h1 style="font-size:2.5rem; font-family:monospace;">Remaining Time:</h1>
+ -->
+<div style="margin: 0 auto; display: flex;justify-content:space-between; width:50%; font-size:2rem;">
+    <pre><input type="number" name="hours" value="0" min="0" max="99">
+Hours</pre>
+
+    <pre><input type="number" name="minutes" value="0" min="0" max="99">
+Minutes</pre>
+
+
+    <pre><input type="number" name="seconds" value="1" min="0" max="99">
+Seconds</pre>
+</div>
+
+<div>
+    <button onclick="pomodoro.setTime()"><i class="fa fa-play fa-2x"></i></button>
+
+<!--     <button onclick="pomodoro.countingDown()">Resume</button>     -->
+    <button onclick="pomodoro.stopTime()" disabled="true"><i class="fa fa-pause fa-2x"></i></button>
+</div>
+
+<div id="reward"></div>
+<div id="cards"></div>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
